@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YumYum — доставка їжі</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">YumYum</a>
+        <nav class="nav">
+          <a href="#how">Як це працює</a>
+          <a href="#features">Функції</a>
+          <a href="#download" class="btn btn-ghost">Завантажити</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>YumYum — твоя улюблена доставка їжі</h1>
+            <p>
+              Замовляй швидко, отримуй смачно та будь завжди ситим з YumYum.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#download">Спробувати</a>
+              <a class="btn btn-outline" href="#how">Дізнатись більше</a>
+            </div>
+            <ul class="badges">
+              <li>Доставка за 30 хв</li>
+              <li>Оплата карткою / готівкою</li>
+              <li>Персональні знижки</li>
+            </ul>
+          </div>
+          <div class="hero-phone">
+            <img
+              src="https://via.placeholder.com/300x600?text=YumYum+App"
+              alt="YumYum App preview"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="how">
+        <div class="container">
+          <h2>Як це працює</h2>
+          <ol class="steps">
+            <li><strong>Вибір:</strong> обираєш ресторан та страви</li>
+            <li><strong>Оплата:</strong> зручно оплачуєш</li>
+            <li>
+              <strong>Доставка:</strong> YumYum приносить замовлення додому
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Функції YumYum</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>Відстеження</h3>
+              <p>Карта кур’єра у реальному часі.</p>
+            </div>
+            <div class="card">
+              <h3>Бонуси</h3>
+              <p>Отримуй кешбек та накопичуй бали.</p>
+            </div>
+            <div class="card">
+              <h3>Рейтинги</h3>
+              <p>Дивись відгуки про ресторани та кур'єрів.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download">
+        <div class="container download-inner">
+          <h2>Завантажити YumYum</h2>
+          <p>Доступно для Android і iOS</p>
+          <div class="store-buttons">
+            <a class="store-btn" href="#"
+              ><img
+                src="https://via.placeholder.com/140x40?text=Google+Play"
+                alt="Google Play"
+            /></a>
+            <a class="store-btn" href="#"
+              ><img
+                src="https://via.placeholder.com/140x40?text=App+Store"
+                alt="App Store"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> YumYum — доставка їжі. Усі права захищені.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
